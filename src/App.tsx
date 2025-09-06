@@ -7,29 +7,32 @@ import logo11 from "./assets/logo11-removebg-preview.png";
 import logo20 from "./assets/logo20-removebg-preview.png";
 import logo21 from "./assets/logo21-removebg-preview.png";
 import logo19 from "./assets/logo19-removebg-preview.png";
+import logo6 from "./assets/logo6-removebg-preview.png";
 import logo7 from "./assets/logo7-removebg-preview.png";
 import logo8 from "./assets/logo8-removebg-preview.png";
+import logo22 from "./assets/logo22-removebg-preview.png";
+import logo23 from "./assets/logo23-removebg-preview.png";
 import logo24 from "./assets/logo24-removebg-preview.png";
 import { motion } from "motion/react";
 import { MessageCircle, TwitterIcon } from "lucide-react";
-import { useState } from "react";
+// import { useState } from "react";
 import Section from "./components/ScrollSection";
 
-const modules = import.meta.glob("./assets/logo*-removebg-preview.png", {
-  eager: true,
-  as: "url",
-});
+// const modules = import.meta.glob("./assets/logo*-removebg-preview.png", {
+//   eager: true,
+//   as: "url",
+// });
 
-// Build a sorted array: logo1, logo2, ... logo21
-const arts = Object.entries(modules)
-  .sort(([a], [b]) => {
-    const na = Number(a.match(/logo(\d+)-/)?.[1] ?? 0);
-    const nb = Number(b.match(/logo(\d+)-/)?.[1] ?? 0);
+// // Build a sorted array: logo1, logo2, ... logo21
+// const arts = Object.entries(modules)
+//   .sort(([a], [b]) => {
+//     const na = Number(a.match(/logo(\d+)-/)?.[1] ?? 0);
+//     const nb = Number(b.match(/logo(\d+)-/)?.[1] ?? 0);
 
-    return na - nb;
-  })
-  .map(([, url]) => url);
-
+//     return na - nb;
+//   })
+//   .map(([, url]) => url);
+//
 const allocations = [
   { name: "Liquidity Pool", lock: "Locked permanently" },
   { name: "Treasury & Ecosystem", lock: "3–6 months" },
@@ -40,6 +43,7 @@ const allocations = [
 const roadmap = [
   {
     quarter: "Q4 2025",
+    logo: logo22,
     items: [
       "Token design + tribal branding complete",
       "Launch on Raydium (Solana)",
@@ -49,6 +53,7 @@ const roadmap = [
   },
   {
     quarter: "Q1 2026",
+    logo: logo6,
     items: [
       "Launch Quantum Wallet",
       "Activate SnareBot v1",
@@ -58,6 +63,7 @@ const roadmap = [
   },
   {
     quarter: "Q2 2026",
+    logo: logo20,
     items: [
       "Launch Skoblin Blockchain",
       "Full governance rollout",
@@ -67,6 +73,7 @@ const roadmap = [
   },
   {
     quarter: "Q3 2026",
+    logo: logo23,
     items: [
       "Optimize Governance",
       "Expanding SnareBot functionality",
@@ -77,7 +84,7 @@ const roadmap = [
 ];
 
 function App() {
-  const [selectedArt, setSelectedArt] = useState<number | null>(null);
+  // const [selectedArt, setSelectedArt] = useState<number | null>(null);
   return (
     <>
       <Header />
@@ -204,7 +211,7 @@ function App() {
             <div className="min-h-[200px] border rounded-xl grid place-items-center p-6 bg-black/50 shadow-lg hover:scale-105 transition-transform cursor-pointer  hover:border-green-400 hover:text-green-400  hover:bg-black/40">
               <div className="flex items-center justify-center gap-3 text-3xl">
                 <h1>Fair Launch</h1>
-                <div className="w-[80px]">
+                <div className="w-[100px]">
                   <img src={logo11} alt="" className="w-full object-contain" />
                 </div>
               </div>
@@ -213,7 +220,7 @@ function App() {
             <div className="min-h-[200px] border rounded-xl grid place-items-center p-6 bg-black/50 shadow-lg hover:scale-105 transition-transform cursor-pointer  hover:border-green-400 hover:text-green-400  hover:bg-black/40">
               <div className="flex items-center justify-center gap-3 text-3xl">
                 <h1>SnareBot</h1>
-                <div className="w-[80px]">
+                <div className="w-[100px]">
                   <img src={logo7} alt="" className="w-full object-contain" />
                 </div>
               </div>
@@ -222,7 +229,7 @@ function App() {
             <div className="min-h-[200px] border rounded-xl grid place-items-center p-6 bg-black/50 shadow-lg hover:scale-105 transition-transform cursor-pointer  hover:border-green-400 hover:text-green-400  hover:bg-black/40">
               <div className="flex items-center justify-center gap-3 text-3xl">
                 <h1>Tribal Governance</h1>
-                <div className="w-[80px]">
+                <div className="w-[100px]">
                   <img src={logo8} alt="" className="w-full object-contain" />
                 </div>
               </div>
@@ -231,7 +238,7 @@ function App() {
             <div className="min-h-[200px] border rounded-xl grid place-items-center p-6 bg-black/50 shadow-lg hover:scale-105 transition-transform cursor-pointer  hover:border-green-400 hover:text-green-400  hover:bg-black/40">
               <div className="flex items-center justify-center gap-3 text-3xl">
                 <h1>Lore Integration</h1>
-                <div className="w-[80px]">
+                <div className="w-[100px]">
                   <img src={logo16} alt="" className="w-full object-contain" />
                 </div>
               </div>
@@ -241,7 +248,7 @@ function App() {
         </div>
       </Section>
 
-      <div className=" min-h-screen bg-[url(./assets/img2.png)] bg-scroll md:bg-fixed bg-cover bg-center text-white w-full py-16">
+      {/* <div className=" min-h-screen bg-[url(./assets/img2.png)] bg-scroll md:bg-fixed bg-cover bg-center text-white w-full py-16">
         <div className="mb-12 px-4 text-center">
           <h1 className="text-6xl lg:text-9xl font-bold mb-4">
             Forest Gallery
@@ -293,7 +300,7 @@ function App() {
             </div>
           </div>
         )}
-      </div>
+      </div> */}
 
       <Section>
         <div className=" bg-[url(./assets/img5.png)] py-16 text-white w-full bg-scroll sm:bg-fixed bg-center bg-cover relative overflow-hidden">
@@ -328,7 +335,7 @@ function App() {
                   </ul>
                 </div>
                 <div className="w-[150px] md:w-[300px]">
-                  <img src={logo20} alt="" />
+                  <img src={phase.logo} alt="" />
                 </div>
               </motion.div>
             ))}
