@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import logo1 from "./assets/logo1-removebg-preview.png";
 import logo3 from "./assets/logo3-removebg-preview.png";
+import logo4 from "./assets/logo4-removebg-preview.png";
 import logo14 from "./assets/logo14-removebg-preview.png";
 import logo16 from "./assets/logo16-removebg-preview.png";
 import logo11 from "./assets/logo11-removebg-preview.png";
@@ -14,7 +15,7 @@ import logo22 from "./assets/logo22-removebg-preview.png";
 import logo23 from "./assets/logo23-removebg-preview.png";
 import logo24 from "./assets/logo24-removebg-preview.png";
 import { motion } from "motion/react";
-import { MessageCircle, TwitterIcon } from "lucide-react";
+import { BookCheck, MessageCircle, TwitterIcon } from "lucide-react";
 // import { useState } from "react";
 import Section from "./components/ScrollSection";
 
@@ -354,7 +355,7 @@ function App() {
               now.
             </p>
           </div>
-          <div className="grid grid-cols-1 items-center  sm:mt-30 sm:grid-cols-2 gap-6 mx-6 lg:mx-80">
+          <div className="grid grid-cols-1 items-center sm:mt-30 sm:grid-cols-2 gap-6 mx-6 lg:mx-80">
             <a
               href=""
               className="flex items-center justify-center gap-3 border py-6 rounded-lg text-3xl hover:shadow-2xl hover:scale-105 transition duration-200 hover:border-green-400 hover:text-green-400 hover:bg-black/40"
@@ -371,6 +372,15 @@ function App() {
               <p className="font-bold">Join the Tribe</p>
               <div className="w-[60px]">
                 <img src={logo1} className="w-full object-contain" />
+              </div>
+            </a>
+            <a
+              href="https://skoblin.com/FILE_1283.pdf"
+              className="flex items-center justify-center sm:col-span-2 gap-3 border py-6 rounded-lg text-3xl hover:shadow-2xl hover:scale-105 transition duration-200 hover:border-green-400 hover:text-green-400  hover:bg-black/40"
+            >
+              <p className="font-bold">whitepaper</p>
+              <div className="w-[60px]">
+                <img src={logo4} alt="whitepaper" />
               </div>
             </a>
           </div>
