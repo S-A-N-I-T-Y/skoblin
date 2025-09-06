@@ -66,12 +66,12 @@ const roadmap = [
     ],
   },
   {
-    quarter: "Post Q2 2026",
+    quarter: "Q3 2026",
     items: [
-      "Launch Skoblin Blockchain",
-      "Full governance rollout",
-      "Merge portal from Solana → Skoblin Chain",
-      "Vault logic and token routing smart contracts",
+      "Optimize Governance",
+      "Expanding SnareBot functionality",
+      "Refining Vault Logic",
+      "Improve User Experience ",
     ],
   },
 ];
@@ -350,7 +350,7 @@ function App() {
           <div className="grid grid-cols-1 items-center  sm:mt-30 sm:grid-cols-2 gap-6 mx-6 lg:mx-80">
             <a
               href=""
-              className="flex items-center justify-center gap-3 border py-6 rounded-lg text-3xl hover:shadow-2xl hover:scale-105 transition duration-200 hover:border-green-400 hover:text-green-400 hover:bg-green-400 hover:text-white"
+              className="flex items-center justify-center gap-3 border py-6 rounded-lg text-3xl hover:shadow-2xl hover:scale-105 transition duration-200 hover:border-green-400 hover:text-green-400 hover:bg-black/40"
             >
               <p className="font-bold">Buy on Radium</p>
               <div className="w-[90px]">
@@ -359,7 +359,7 @@ function App() {
             </a>
             <a
               href="https://t.me/Skoblin0"
-              className="flex items-center justify-center gap-3 border py-6 rounded-lg text-3xl hover:shadow-2xl hover:scale-105 transition duration-200 hover:border-green-400 hover:text-green-400  hover:bg-green-400 hover:text-white"
+              className="flex items-center justify-center gap-3 border py-6 rounded-lg text-3xl hover:shadow-2xl hover:scale-105 transition duration-200 hover:border-green-400 hover:text-green-400  hover:bg-black/40"
             >
               <p className="font-bold">Join the Tribe</p>
               <div className="w-[60px]">
