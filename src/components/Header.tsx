@@ -28,6 +28,9 @@ const Header = () => {
           <p className="text-xl sm:text-2xl text-green-400 px-6 text-center absolute bottom-55">
             "Some say the forest remembers. The Skoblins? They never forgot."
           </p>
+          <p className="text-xl sm:text-2xl text-green-400 px-6 text-center absolute bottom-45">
+            Ca:TBA
+          </p>
         </section>
       </div>
     </Section>

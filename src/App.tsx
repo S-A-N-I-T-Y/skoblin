@@ -1,19 +1,17 @@
 import Header from "./components/Header";
+import logo1 from "./assets/logo1-removebg-preview.png";
 import logo3 from "./assets/logo3-removebg-preview.png";
 import logo14 from "./assets/logo14-removebg-preview.png";
+import logo16 from "./assets/logo16-removebg-preview.png";
+import logo11 from "./assets/logo11-removebg-preview.png";
+import logo20 from "./assets/logo20-removebg-preview.png";
 import logo21 from "./assets/logo21-removebg-preview.png";
-import logo22 from "./assets/logo22-removebg-preview.png";
+import logo19 from "./assets/logo19-removebg-preview.png";
+import logo7 from "./assets/logo7-removebg-preview.png";
+import logo8 from "./assets/logo8-removebg-preview.png";
+import logo24 from "./assets/logo24-removebg-preview.png";
 import { motion } from "motion/react";
-import {
-  ArrowRight,
-  BotIcon,
-  CloudLightningIcon,
-  MessageCircle,
-  Shield,
-  TwitterIcon,
-  Users,
-  UsersIcon,
-} from "lucide-react";
+import { MessageCircle, TwitterIcon } from "lucide-react";
 import { useState } from "react";
 import Section from "./components/ScrollSection";
 
@@ -87,24 +85,26 @@ function App() {
       <Section>
         <div className="bg-[url(./assets/img4.png)] relative bg-scroll md:bg-fixed bg-center bg-cover w-full text-white px-10 lg:px-20 py-16">
           <section className="text-center py-5 mb-4 md:mb-6 lg:mb-6">
-            <h1 className="text-4xl lg:text-8xl uppercase">Skoblin</h1>
-            <p className="text-xl lg:text-2xl">The chain of tribes</p>
+            <h1 className="text-6xl lg:text-9xl uppercase font-bold">
+              Skoblin
+            </h1>
+            <p className="text-2xl lg:text-4xl">The chain of tribes</p>
             <p className="text-lg lg:text-xl">
               A meme-token born in the wild, powered by lore, built with tools.
             </p>
           </section>
           <section className="flex flex-col sm:flex-row justify-center items-center gap-8">
             <div className="w-full sm:w-1/2 text-sm sm:text-base">
-              <h1 className="text-2xl md:text-3xl font-bold mb-4">
+              <h1 className="text-2xl lg:text-4xl font-bold mb-4">
                 What is skoblin?
               </h1>
-              <p className="mb-2">
+              <p className="mb-2 text-lg sm:text-2xl">
                 Skoblin is a tribe-born meme token forged inside Solana's forest
                 of legends. No presale. No venture capital. Just toolmaking
                 tribes, ancient lore, and an ecosystem that grows from the roots
                 up.
               </p>
-              <p>
+              <p className="text-lg sm:text-2xl">
                 Every SKOBLIN token carries forest lore. Every holder becomes
                 part of the tribe. In a mystical, bioluminescent forest
                 untouched by time, a hidden race thrives — Skoblins. These
@@ -114,7 +114,7 @@ function App() {
             </div>
             <div className="w-[250px] sm:w-[350px] ">
               <img
-                src={logo3}
+                src={logo24}
                 className="w-full object-contain animate-bounce animation-duration-[2500ms]"
                 alt="skoblin"
               />
@@ -125,7 +125,7 @@ function App() {
 
       <Section>
         <div className="bg-[url(./assets/img1.png)] bg-scroll sm:bg-fixed bg-center bg-contain px-6 md:px-10 lg:px-20 text-white w-full py-16">
-          <h1 className="text-3xl md:text-5xl lg:text-8xl text-center mb-10">
+          <h1 className="text-6xl lg:text-9xl font-bold text-center mb-10">
             Token Overview
           </h1>
           <div className="flex flex-col sm:flex-row gap-10 justify-center items-center">
@@ -141,8 +141,8 @@ function App() {
                 Post-Merge Tax (Skoblin Chain): 2% buy/sell
               </p>
               <div className="hidden sm:block space-y-2">
-                <h1 className="text-xl font-semibold">Token Utility</h1>
-                <p>
+                <h1 className="text-4xl font-semibold">Token Utility</h1>
+                <p className="font-bold">
                   SKOBLIN tokens are used for tribal governance, resource
                   management, trading between tribes, participating in the
                   Forest Vault, and funding ecosystem operations. Token
@@ -163,7 +163,7 @@ function App() {
 
       <Section>
         <div className="bg-[url(./assets/img5.png)] bg-scroll md:bg-fixed bg-center bg-cover px-4 md:px-10 lg:px-20 text-white w-full py-16">
-          <h1 className="text-center mb-10 sm:mb-16 text-3xl md:text-4xl lg:text-5xl font-bold">
+          <h1 className="text-center mb-10 sm:mb-16 text-6xl lg:text-9xl font-bold">
             Token Allocation and Lockups
           </h1>
           <div className="flex flex-col sm:flex justify-between items-center gap-10">
@@ -171,16 +171,20 @@ function App() {
               {allocations.map((alloc) => (
                 <div
                   key={alloc.name}
-                  className="bg-black/70 py-6 mb-2 text-center rounded-xl shadow-lg hover:shadow-2xl cursor-pointer"
+                  className="bg-black/70 py-10 sm:py-12 px-10 mb-2 text-center rounded-xl shadow-lg hover:shadow-2xl cursor-pointer"
                 >
-                  <span className="text-sm md:text-base lg:text-lg font-medium">
+                  <span className="text-lg md:text-xl lg:text-2xl font-bold">
                     {alloc.name}: {alloc.lock}
                   </span>
                 </div>
               ))}
             </div>
             <div className="w-[250px] sm:w-[350px]">
-              <img src={logo21} alt="" />
+              <img
+                src={logo21}
+                alt=""
+                className="animate-bounce animation-duration-[2500ms]"
+              />
             </div>
           </div>
         </div>
@@ -188,10 +192,10 @@ function App() {
       <Section>
         <div className=" min-h-screen bg-[url(./assets/img3.png)] bg-scroll md:bg-fixed bg-cover bg-center text-white w-full py-16">
           <div className="mb-12 px-4 text-center">
-            <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold mb-4">
+            <h1 className="text-6xl lg:text-9xl font-bold mb-4">
               Key Features
             </h1>
-            <p className="text-lg md:text-xl opacity-90">
+            <p className="text-2xl md:text-4xl">
               What makes skoblin unique in the crypto forest
             </p>
           </div>
@@ -200,28 +204,36 @@ function App() {
             <div className="min-h-[200px] border rounded-xl grid place-items-center p-6 bg-black/50 shadow-lg hover:scale-105 transition-transform cursor-pointer  hover:border-green-400 hover:text-green-400  hover:bg-black/40">
               <div className="flex items-center justify-center gap-3 text-3xl">
                 <h1>Fair Launch</h1>
-                <Shield size={30} />
+                <div className="w-[80px]">
+                  <img src={logo11} alt="" className="w-full object-contain" />
+                </div>
               </div>
               <p className="text-xl">No presale,no team wallets</p>
             </div>
             <div className="min-h-[200px] border rounded-xl grid place-items-center p-6 bg-black/50 shadow-lg hover:scale-105 transition-transform cursor-pointer  hover:border-green-400 hover:text-green-400  hover:bg-black/40">
               <div className="flex items-center justify-center gap-3 text-3xl">
                 <h1>SnareBot</h1>
-                <BotIcon size={30} />
+                <div className="w-[80px]">
+                  <img src={logo7} alt="" className="w-full object-contain" />
+                </div>
               </div>
               <p className="text-xl">Advanced trading tools</p>
             </div>
             <div className="min-h-[200px] border rounded-xl grid place-items-center p-6 bg-black/50 shadow-lg hover:scale-105 transition-transform cursor-pointer  hover:border-green-400 hover:text-green-400  hover:bg-black/40">
               <div className="flex items-center justify-center gap-3 text-3xl">
                 <h1>Tribal Governance</h1>
-                <UsersIcon size={30} />
+                <div className="w-[80px]">
+                  <img src={logo8} alt="" className="w-full object-contain" />
+                </div>
               </div>
               <p className="text-xl">No presale,no team wallets</p>
             </div>
             <div className="min-h-[200px] border rounded-xl grid place-items-center p-6 bg-black/50 shadow-lg hover:scale-105 transition-transform cursor-pointer  hover:border-green-400 hover:text-green-400  hover:bg-black/40">
               <div className="flex items-center justify-center gap-3 text-3xl">
                 <h1>Lore Integration</h1>
-                <CloudLightningIcon size={30} />
+                <div className="w-[80px]">
+                  <img src={logo16} alt="" className="w-full object-contain" />
+                </div>
               </div>
               <p className="text-xl">Story-driven tokenomics</p>
             </div>
@@ -229,67 +241,67 @@ function App() {
         </div>
       </Section>
 
-   
-        <div className=" min-h-screen bg-[url(./assets/img2.png)] bg-scroll md:bg-fixed bg-cover bg-center text-white w-full py-16">
-          <div className="mb-12 px-4 text-center">
-            <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold mb-4">
-              Forest Gallery
-            </h1>
-            <p className="text-lg md:text-xl opacity-90">
-              Explore the mystical world of Skoblin through our art collection
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-6 lg:mx-20">
-            {arts.map((url, i) => (
-              <div
-                key={i}
-                className="relative group rounded-xl overflow-hidden border border-transparent hover:border-green-400 cursor-pointer transition duration-300 aspect-square bg-black/30"
-                onClick={() => setSelectedArt(i + 1)}
-              >
-                <img
-                  src={url}
-                  alt={`Skoblin Art ${i + 1}`}
-                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
-                  <span className="text-lg font-semibold text-green-400">
-                    Art #{i + 1}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-          {selectedArt !== null && (
+      <div className=" min-h-screen bg-[url(./assets/img2.png)] bg-scroll md:bg-fixed bg-cover bg-center text-white w-full py-16">
+        <div className="mb-12 px-4 text-center">
+          <h1 className="text-6xl lg:text-9xl font-bold mb-4">
+            Forest Gallery
+          </h1>
+          <p className="text-2xl md:text-4xl opacity-90">
+            Explore the mystical world of Skoblin through our art collection
+          </p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-6 lg:mx-20">
+          {arts.map((url, i) => (
             <div
-              className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
-              onClick={() => setSelectedArt(null)}
+              key={i}
+              className="relative group rounded-xl overflow-hidden border border-transparent hover:border-green-400 cursor-pointer transition duration-300 aspect-square bg-black/30"
+              onClick={() => setSelectedArt(i + 1)}
             >
-              <div
-                className="relative max-w-3xl w-full mx-4"
-                onClick={(e) => e.stopPropagation()} // prevent modal closing when clicking the image
-              >
-                <img
-                  src={arts[selectedArt - 1]} // use the array of imported images
-                  alt={`Skoblin Art ${selectedArt}`}
-                  className="w-full h-auto rounded-lg shadow-lg"
-                />
-                <span
-                  className="absolute top-4 sm:top-10 right-6 text-white text-2xl cursor-pointer"
-                  onClick={() => setSelectedArt(null)}
-                >
-                  ✕
+              <img
+                src={url}
+                alt={`Skoblin Art ${i + 1}`}
+                className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+                <span className="text-lg font-semibold text-green-400">
+                  Art #{i + 1}
                 </span>
               </div>
             </div>
-          )}
+          ))}
         </div>
-      
+        {selectedArt !== null && (
+          <div
+            className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+            onClick={() => setSelectedArt(null)}
+          >
+            <div
+              className="relative max-w-3xl w-full mx-4"
+              onClick={(e) => e.stopPropagation()} // prevent modal closing when clicking the image
+            >
+              <img
+                src={arts[selectedArt - 1]} // use the array of imported images
+                alt={`Skoblin Art ${selectedArt}`}
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+              <span
+                className="absolute top-4 sm:top-10 right-6 text-white text-2xl cursor-pointer"
+                onClick={() => setSelectedArt(null)}
+              >
+                ✕
+              </span>
+            </div>
+          </div>
+        )}
+      </div>
 
       <Section>
         <div className=" bg-[url(./assets/img5.png)] py-16 text-white w-full bg-scroll sm:bg-fixed bg-center bg-cover relative overflow-hidden">
           <div className="py-10 text-center">
-            <h1 className="text-3xl md:text-5xl lg:text-8xl mb-5">Roadmaps</h1>
-            <p>What makes skoblin unique in the crypto forest</p>
+            <h1 className="text-6xl lg:text-9xl mb-5">Roadmaps</h1>
+            <p className="text-2xl md:text-4xl">
+              What makes skoblin unique in the crypto forest
+            </p>
           </div>
           <div className="mx-2 md:mx-10 lg:mx-20 relative">
             {/* Line tracker */}
@@ -301,18 +313,23 @@ function App() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 viewport={{ once: false, amount: 0.2 }}
-                className={`relative w-full sm:w-1/2 p-6 mb-12 rounded-lg bg-black/60 shadow-lg ${
+                className={`relative w-full sm:w-1/2 p-6 mb-12 rounded-lg bg-black/60 shadow-lg flex items-center justify-between ${
                   i % 2 === 0 ? "ml-auto text-left" : "mr-auto text-left"
                 }`}
               >
-                <h2 className="text-xl md:text-2xl font-bold mb-3 ">
-                  {phase.quarter}
-                </h2>
-                <ul role="list" className="space-y-2 text-sm md:text-base">
-                  {phase.items.map((item, idx) => (
-                    <li key={idx}> {item}</li>
-                  ))}
-                </ul>
+                <div>
+                  <h2 className="text-xl md:text-2xl font-bold mb-3 ">
+                    {phase.quarter}
+                  </h2>
+                  <ul role="list" className="space-y-2 text-sm md:text-base">
+                    {phase.items.map((item, idx) => (
+                      <li key={idx}> {item}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="w-[150px] md:w-[300px]">
+                  <img src={logo20} alt="" />
+                </div>
               </motion.div>
             ))}
           </div>
@@ -325,7 +342,7 @@ function App() {
             <h1 className="text-6xl lg:text-9xl font-bold mb-4">
               Ready to Join?
             </h1>
-            <p className="text-lg md:text-3xl shadow-2xl opacity-90">
+            <p className="text-2xl md:text-4xl shadow-2xl font-bold">
               The forest awaits. The tribe grows stronger. Your journey begins
               now.
             </p>
@@ -333,17 +350,21 @@ function App() {
           <div className="grid grid-cols-1 items-center  sm:mt-30 sm:grid-cols-2 gap-6 mx-6 lg:mx-80">
             <a
               href=""
-              className="flex items-center justify-center gap-3 border py-6 rounded-lg text-3xl hover:shadow-2xl hover:scale-105 transition duration-200 hover:border-green-400 hover:text-green-400 hover:bg-black/40"
+              className="flex items-center justify-center gap-3 border py-6 rounded-lg text-3xl hover:shadow-2xl hover:scale-105 transition duration-200 hover:border-green-400 hover:text-green-400 hover:bg-green-400 hover:text-white"
             >
-              <p>Buy on Radium</p>
-              <ArrowRight size={40} />
+              <p className="font-bold">Buy on Radium</p>
+              <div className="w-[90px]">
+                <img src={logo19} className="w-full object-contain" />
+              </div>
             </a>
             <a
               href="https://t.me/Skoblin0"
-              className="flex items-center justify-center gap-3 border py-6 rounded-lg text-3xl hover:shadow-2xl hover:scale-105 transition duration-200 hover:border-green-400 hover:text-green-400  hover:bg-black/40"
+              className="flex items-center justify-center gap-3 border py-6 rounded-lg text-3xl hover:shadow-2xl hover:scale-105 transition duration-200 hover:border-green-400 hover:text-green-400  hover:bg-green-400 hover:text-white"
             >
-              <p>Join the Tribe</p>
-              <Users size={40} />
+              <p className="font-bold">Join the Tribe</p>
+              <div className="w-[60px]">
+                <img src={logo1} className="w-full object-contain" />
+              </div>
             </a>
           </div>
         </div>
@@ -356,7 +377,7 @@ function App() {
             <div className="mx-auto text-center">
               <div className="flex justify-center items-center gap-2 sm:gap-5 mb-4">
                 <div className="w-[100px] h-auto">
-                  <img src={logo22} alt="skoblin" className="w-full h-auto" />
+                  <img src={logo3} alt="skoblin" className="w-full h-auto" />
                 </div>
                 <h1 className="text-5xl uppercase font-bold">skoblin</h1>
               </div>
