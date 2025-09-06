@@ -15,7 +15,7 @@ import logo22 from "./assets/logo22-removebg-preview.png";
 import logo23 from "./assets/logo23-removebg-preview.png";
 import logo24 from "./assets/logo24-removebg-preview.png";
 import { motion } from "motion/react";
-import { BookCheck, MessageCircle, TwitterIcon } from "lucide-react";
+import { MessageCircle, TwitterIcon } from "lucide-react";
 // import { useState } from "react";
 import Section from "./components/ScrollSection";
 
