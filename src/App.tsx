@@ -411,7 +411,7 @@ function App() {
                   <MessageCircle className="w-6 h-6 cursor-pointer hover:text-blue-400 transition"></MessageCircle>
                 </a>
                 <a
-                  href="https://x.com/skoblin"
+                  href="https://x.com/skoblin_"
                   target="blank"
                   rel="noopener noreferrer"
                   aria-label="Skoblin Twitter"
