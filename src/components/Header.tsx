@@ -29,7 +29,7 @@ const Header = () => {
             "Some say the forest remembers. The Skoblins? They never forgot."
           </p>
           <p className="text-xl sm:text-2xl text-green-400 px-6 text-center font-bold absolute bottom-45">
-            Ca:TBA
+            Ca:Go5Rv5FUM8Bmp9MPrPFAsARL6hDygHaMY6XrV7CGNPvM
           </p>
         </section>
       </div>
